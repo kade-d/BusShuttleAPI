@@ -26,9 +26,9 @@ Route::get('stops/{id}', 'StopController@find');
 Route::post('stops', 'StopController@create');
 Route::delete('stops/{id}', 'StopController@delete');
 
-Route::get('users', 'UserController@get');
-Route::get('users/{id}', 'UserController@find');
-Route::post('users', 'UserController@create');
-Route::delete('users/{id}', 'UserController@delete');
+Route::get('drivers', 'UserController@get');
+Route::get('drivers/{id}', 'UserController@find');
+Route::post('drivers', 'UserController@create');
+Route::delete('drivers/{id}', 'UserController@delete');
 
 

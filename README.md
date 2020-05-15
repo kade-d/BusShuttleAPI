@@ -17,8 +17,33 @@ Forked from: https://github.com/hergin/BusShuttleAPI
 
 ## Endpoints
 
-* http://localhost/BusShuttleAPI/public/api/users
-* http://localhost/BusShuttleAPI/public/api/loops
-* http://localhost/BusShuttleAPI/public/api/stops
-* http://localhost/BusShuttleAPI/public/api/buses
-* http://localhost/BusShuttleAPI/public/api/inspection-items
+#### Drivers
+* `GET` http://localhost/BusShuttleAPI/public/api/drivers 
+* `GET` http://localhost/BusShuttleAPI/public/api/drivers/{id}
+* `POST` http://localhost/BusShuttleAPI/public/api/drivers
+* `DELETE` http://localhost/BusShuttleAPI/public/api/drivers/{id} 
+
+#### Buses
+* `GET` http://localhost/BusShuttleAPI/public/api/buses
+* `GET` http://localhost/BusShuttleAPI/public/api/buses/{id}
+* `POST` http://localhost/BusShuttleAPI/public/api/buses
+* `DELETE` http://localhost/BusShuttleAPI/public/api/buses/{id}
+
+#### Inspection Items
+* `GET` http://localhost/BusShuttleAPI/public/api/inspection-items
+* `GET` http://localhost/BusShuttleAPI/public/api/inspection-items/{id}
+* `POST` http://localhost/BusShuttleAPI/public/api/inspection-items
+* `DELETE` http://localhost/BusShuttleAPI/public/api/inspection-items/{id}
+
+#### Loops
+* `GET` http://localhost/BusShuttleAPI/public/api/loops
+* `GET` http://localhost/BusShuttleAPI/public/api/loops/{id}
+* `POST` http://localhost/BusShuttleAPI/public/api/loops
+* `DELETE` http://localhost/BusShuttleAPI/public/api/loops/{id}
+
+#### Stops
+* `GET` http://localhost/BusShuttleAPI/public/api/stops
+* `GET` http://localhost/BusShuttleAPI/public/api/stops/{id}
+* `POST` http://localhost/BusShuttleAPI/public/api/stops
+* `DELETE` http://localhost/BusShuttleAPI/public/api/stops/{id}
+

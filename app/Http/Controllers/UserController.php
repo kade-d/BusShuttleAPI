@@ -18,12 +18,11 @@ class UserController extends BaseController
 
     private function select()
     {
-        return DB::table('users')->select($this->id, $this->firstName, $this->lastName, $this->email, $this->isDeleted);
+        return DB::table('drivers')->select($this->id, $this->firstName, $this->lastName, $this->email, $this->isDeleted);
     }
 
     public function get()
     {
-
         $content = $this->select()->get();
         return response(array("data" => $content), 200);
     }
