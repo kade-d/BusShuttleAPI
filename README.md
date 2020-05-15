@@ -1,6 +1,23 @@
-# ShuttleLogCollectionSystemAPI
-This is the backend API for our Shuttle Bus Log Collection System. The "connect.php" file that is necessary for the API to function on our live database will not be included.
+# Shuttle Bus API 
 
-Link to our main repository: [Project Root](https://github.com/kdesimini/Bus-Shuttle-Log-Collection-System)
+Forked from: https://github.com/hergin/BusShuttleAPI
+ 
+```
+*Rewrote the Original API with Laravel.
+*Changed routes to fulfill REST requirements.
+*Added most endpoints.
+```
 
-Link to our driver-interface repository: [Driver interface](https://github.com/kdesimini/ShuttleLogCollectionSystemSourceCode)
+## To Build
+### For XAMPP
+1. Clone repository to xampp/htdocs folder.
+2. Run `composer install` in project directory. Get composer &#8594; https://getcomposer.org/download/
+3. You can now start the apache server. API endpoints are located in http://localhost/BusShuttleAPI/public/api
+
+Endpoints:
+
+http://localhost/BusShuttleAPI/public/api/users
+http://localhost/BusShuttleAPI/public/api/loops
+http://localhost/BusShuttleAPI/public/api/stops
+http://localhost/BusShuttleAPI/public/api/buses
+http://localhost/BusShuttleAPI/public/api/inspection-items

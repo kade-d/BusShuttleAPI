@@ -9,6 +9,9 @@
     },
     "require": {
         "laravel/installer": "^3.0",
-      "ext-json": "*"
+        "ext-json": "*",
+        "laravel/framework": "^7.11",
+        "fideloper/proxy": "^4.3",
+        "fruitcake/laravel-cors": "^2.0"
     }
 }
