@@ -1,6 +1,12 @@
-# ShuttleLogCollectionSystemAPI
-This is the backend API for our Shuttle Bus Log Collection System. The "connect.php" file that is necessary for the API to function on our live database will not be included.
+# Shuttle Bus API 
 
-Link to our main repository: [Project Root](https://github.com/kdesimini/Bus-Shuttle-Log-Collection-System)
+Forked from: https://github.com/hergin/BusShuttleAPI
 
-Link to our driver-interface repository: [Driver interface](https://github.com/kdesimini/ShuttleLogCollectionSystemSourceCode)
+<ul>
+    <p>Rewrote the Original API into Laravel.</p>
+
+    <p>Changed routes to fulfill RESTful requirements.</p>
+
+    <p>Added most required endpoints.</p>
+</ul>
+
