@@ -14,10 +14,10 @@ Forked from: https://github.com/hergin/BusShuttleAPI
 2. Run `composer install` in project directory. Get composer &#8594; https://getcomposer.org/download/
 3. You can now start the apache server. API endpoints are located in http://localhost/BusShuttleAPI/public/api
 
-Endpoints:
+## Endpoints
 
-http://localhost/BusShuttleAPI/public/api/users
-http://localhost/BusShuttleAPI/public/api/loops
-http://localhost/BusShuttleAPI/public/api/stops
-http://localhost/BusShuttleAPI/public/api/buses
-http://localhost/BusShuttleAPI/public/api/inspection-items
+* http://localhost/BusShuttleAPI/public/api/users
+* http://localhost/BusShuttleAPI/public/api/loops
+* http://localhost/BusShuttleAPI/public/api/stops
+* http://localhost/BusShuttleAPI/public/api/buses
+* http://localhost/BusShuttleAPI/public/api/inspection-items
