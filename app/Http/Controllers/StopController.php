@@ -6,38 +6,46 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Routing\Controller as BaseController;
 
-class StopController
+class StopController extends BaseController
 {
     private $id = "id";
     private $name = "stops";
     private $isDeleted = "is_deleted";
 
-    private function select(){
+    private function select()
+    {
         return DB::table('stops')->select($this->id, $this->name, $this->isDeleted, $this->isDeleted);
     }
 
     public function get()
     {
-        return response(array("data" => $this->select()->get()), 200);
+        $content = $this->select()->get();
+        return response(array("data" => $content), 200);
     }
 
     public function find($id)
     {
-        return $this->select()->where($this->id, $id)->get();
+        $content = $this->select()->where($this->id, $id)->get();
+        return response(array("data" => $content), 200);
     }
 
-    public function create(Request $request){
-        return $this->select()->insert($request->toArray());
+    public function create(Request $request)
+    {
+        $content = $this->select()->insert($request->toArray());
+        return response(array("data" => $content), 200);
     }
 
     public function update(Request $request, $id)
     {
-        return $this->select()->where($this->id, $id)->update($request->toArray());
+        $content = $this->select()->where($this->id, $id)->update($request->toArray());
+        return response(array("data" => $content), 200);
     }
 
     public function delete($id)
     {
-        return $this->select()->where($this->id, $id)->update(array($this->isDeleted => 1));
+        $content = $this->select()->where($this->id, $id)->update(array($this->isDeleted => 1));
+        return response(array("data" => $content), 200);
     }
 }

@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+$name = Route::currentRouteName();
+
+Route::pattern('id', '[0-9]+');
+
 Route::get('buses', 'BusController@get');
 Route::get('buses/{id}', 'BusController@find');
 Route::post('buses', 'BusController@create');
@@ -24,7 +28,6 @@ Route::delete('stops/{id}', 'StopController@delete');
 
 Route::get('users', 'UserController@get');
 Route::get('users/{id}', 'UserController@find');
-Route::put('users/{id}', 'UserController@update');
 Route::post('users', 'UserController@create');
 Route::delete('users/{id}', 'UserController@delete');
 
