@@ -1,13 +1,11 @@
 # Shuttle Bus API 
 
 Forked from: https://github.com/hergin/BusShuttleAPI
+ 
+```
+*Rewrote the Original API with Laravel.
+*Changed routes to fulfill REST requirements.
+*Added most endpoints.
+```
 
-<ul>
-    <br>
-    Rewrote the Original API into Laravel.
-
-    Changed routes to fulfill RESTful requirements.
-
-    Added most required endpoints.
-</ul>
-
+## To Build
