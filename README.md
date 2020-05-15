@@ -3,10 +3,10 @@
 Forked from: https://github.com/hergin/BusShuttleAPI
 
 <ul>
-    <p>Rewrote the Original API into Laravel.</p>
+    Rewrote the Original API into Laravel.
 
-    <p>Changed routes to fulfill RESTful requirements.</p>
+    Changed routes to fulfill RESTful requirements.
 
-    <p>Added most required endpoints.</p>
+    Added most required endpoints.
 </ul>
 
