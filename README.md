@@ -8,6 +8,8 @@ Forked from: https://github.com/hergin/BusShuttleAPI
 *Added most endpoints.
 ```
 
+#### NOTE
+The **users** table in the database was renamed to **drivers**, for now just change the name in PHPMyAdmin.
 ## To Build
 ### For XAMPP
 1. Clone repository to xampp/htdocs folder.
