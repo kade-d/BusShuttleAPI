@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Routing\Controller as BaseController;
 
-class UserController extends BaseController
+class DriverController extends BaseController
 {
+
     private $id = "id";
     private $firstName = "firstname";
     private $lastName = "lastname";
@@ -25,6 +26,7 @@ class UserController extends BaseController
     {
         $content = $this->select()->get();
         return response(array("data" => $content), 200);
+
     }
 
     public function find($id)

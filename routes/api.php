@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
 Route::pattern("id", "[0-9]+");
 
 Route::get('buses', 'BusController@get');
@@ -40,9 +41,8 @@ Route::get('stops/{id}', 'StopController@find');
 Route::post('stops', 'StopController@create');
 Route::delete('stops/{id}', 'StopController@delete');
 
-Route::get('drivers', 'UserController@get');
-Route::get('drivers/{id}', 'UserController@find');
-Route::put('drivers/{id}', 'UserController@update');
-Route::post('drivers', 'UserController@create');
-Route::delete('drivers/{id}', 'UserController@delete');
+Route::get('drivers', 'DriverController@get');
+Route::get('drivers/{id}', 'DriverController@find');
+Route::post('drivers', 'DriverController@create');
+Route::delete('drivers/{id}', 'DriverController@delete');
 
