@@ -1,5 +1,5 @@
-##Bus Shuttle API Docs
-####Routing
+## Bus Shuttle API Docs
+#### Routing
 Url routes are loaded in `/app/Providers/RouteServiceProvider.php` <br>
 
    * There are two types of routes:
@@ -11,12 +11,12 @@ These routes can be accessed using `route("homeRoute")` <br>
 
 Authorization routes are setup using `Passport::routes()` in `AuthServiceProvider`
 
-####Authorization
+#### Authorization
 Laravel Passport is used to provide a full OAuth2 server implementation. Docs here: https://laravel.com/docs/7.x/passport<br>
 
 The two first-party applications will get tokens using OAuth's Password grants. https://laravel.com/docs/7.x/passport#password-grant-tokens
 
-#####To request a token
+##### To request a token
 Make a `POST` request to localhost/BusShuttleAPI/public/oauth/token
 ``` 
 'grant_type' => 'password',
@@ -42,20 +42,17 @@ You will receive a json response such as:
 Once you have an API token you can make requests to the API with the header: <br>
 `Authorization: Bearer {ACCESS_TOKEN}`
 
-####Middleware
+#### Middleware
 Middleware is found in `app/Http/Middleware`.
 Some middleware is applied to routes in `RouteServiceProvider`.
 Middleware is registered in `app/Http/Kernel.php`.
 
-####Database
+#### Database
 Database configuration is found in `/.env`
 
-####API
+#### API
 Routes that are configured in `/routes/api.php` are forwarded to controllers in `/app/Http/Controllers`
 * Controllers are responsible for handling requests made to the API
 
-####Views
+#### Views
 Laravel generates default views for web routes. These can be configured in `/routes/web.php`.
-
-###Misc.
-Passport uses the 
