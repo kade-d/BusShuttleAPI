@@ -19,5 +19,9 @@ class AuthServiceProvider extends ServiceProvider
 
         Passport::routes(); //sets up routes such as /oauth/token
 
+        Passport::tokensCan([
+            "administrate" => "Administrator",
+            "use" => "User"
+        ]);
     }
 }

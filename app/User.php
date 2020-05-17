@@ -19,4 +19,25 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    //Source: coogle @ https://github.com/laravel/passport/issues/195#issuecomment-336543531
+    public function withAccessToken($accessToken)
+    {
+        $this->accessToken = $accessToken;
+
+        $token = $this->token();
+        $token->scopes = $this->getScopes();
+        $token->save();
+
+        return $this;
+    }
+
+    private function getScopes(){
+        $isAdmin = $this->getAttributeValue("is_admin");
+        if($isAdmin == 1){
+            return ["use", "administrate"];
+        } else {
+            return ["use"];
+        }
+    }
+
 }
