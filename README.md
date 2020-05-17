@@ -53,6 +53,6 @@ All endpoints now require an access token. See DOCUMENTATION.md for instructions
 * `POST` http://localhost/BusShuttleAPI/public/api/stops
 * `DELETE` http://localhost/BusShuttleAPI/public/api/stops/{id}
 
-##Documentation
+## Documentation
 See DOCUMENTATION.md if you are accessing the API.
 
