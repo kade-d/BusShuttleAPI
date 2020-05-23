@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 class BusController extends BaseController
 {
     private $id = "id";
-    private $name = "busIdentifier";
+    private $name = "name";
     private $isDeleted = "is_deleted";
 
     private function select()

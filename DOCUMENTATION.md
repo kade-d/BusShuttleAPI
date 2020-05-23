@@ -68,3 +68,6 @@ Routes that are configured in `/routes/api.php` are forwarded to controllers in 
 
 ### Views
 Laravel generates default views for web routes. These can be configured in `/routes/web.php`.
+
+### Cors
+The API applies Cors policies settings in `/config/cors.php`

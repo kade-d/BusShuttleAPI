@@ -11,11 +11,11 @@ use Illuminate\Routing\Controller as BaseController;
 class LoopController extends BaseController
 {
     private $id = "id";
-    private $name = "loops";
+    private $name = "name";
     private $isDeleted = "is_deleted";
 
     private function select(){
-        return DB::table('loops')->select($this->id, $this->name, $this->isDeleted, $this->isDeleted);
+        return DB::table('loops')->select($this->id, $this->name, $this->isDeleted);
     }
 
     public function get()

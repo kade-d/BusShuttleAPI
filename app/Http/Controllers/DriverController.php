@@ -11,8 +11,8 @@ class DriverController extends BaseController
 {
 
     private $id = "id";
-    private $firstName = "firstname";
-    private $lastName = "lastname";
+    private $firstName = "first_name";
+    private $lastName = "last_name";
     private $email = "email";
     private $password = "password";
     private $isDeleted = "is_deleted";

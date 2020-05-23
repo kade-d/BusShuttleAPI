@@ -11,13 +11,13 @@ use Illuminate\Routing\Controller as BaseController;
 class InspectionItemController extends BaseController
 {
     private $id = "id";
-    private $name = "inspection_item_name";
+    private $name = "name";
     private $isPreTrip = "post_trip_inspection";
     private $isPostTrip = "pre_trip_inspection";
     private $isDeleted = "is_deleted";
 
     private function select(){
-        return DB::table('inspection_items_list')->select($this->id, $this->name, $this->isDeleted, $this->isPreTrip, $this->isPostTrip, $this->isDeleted);
+        return DB::table('inspection_items')->select($this->id, $this->name, $this->isDeleted, $this->isPreTrip, $this->isPostTrip, $this->isDeleted);
     }
 
     public function get()

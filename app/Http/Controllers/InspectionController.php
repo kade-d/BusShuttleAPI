@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class InspectionController
     private $isDeleted = "is_deleted";
 
     private function select(){
-        return DB::table('')->select('*');
+        return DB::table('inspections')->select('*');
     }
 
     public function get()
